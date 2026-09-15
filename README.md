@@ -1,27 +1,36 @@
 # steam-game-recommender
+
 Full stack game recommendation system that uses the Steam database to recommend similar games to users through cosine similarity based on multiple games selected by the user
 
-Features
-Search for games from the Steam dataset
-Select multiple games to be used as inputs for recommendations
-Generate recommendations based on all selected games
-See a similarity score for each recommendation
-View the recommended game's price, rating and release year
-See which user-selected game each recommendation is most similar to
-See the most important shared tags, genres and categories with that game
-Remove selected games and update the recommendations
+
+## Features
+
+- Search for games from the Steam dataset
+- Select multiple games to be used as inputs for recommendations
+- Generate recommendations based on all selected games
+- See a similarity score for each recommendation
+- View the recommended game's price, rating and release year
+- See which user-selected game each recommendation is most similar to
+- See the most important shared tags, genres and categories with that game
+- Remove selected games and update the recommendations
+
 
 ## How it works
 
 The application consists of a React frontend with a Flask backend. The frontend allows the user to search for and select games, while the backend processes the selected games to generate recommendations.
 
-## Frontend
+![Steam Game Recommender](images/recommender.png)
+
+
+### Frontend
 
 The React frontend handles the user interface and sends requests to the Flask backend when the user searches for games or updates their selected games.
+
 
 ### Backend
 
 The Flask backend provides the API that connects the React frontend to the recommendation system. It receives game searches and selected games from the frontend, processes the requests and returns the relevant results.
+
 
 ## Data cleaning
 
@@ -41,9 +50,11 @@ Categories that are not useful for determining game similarity are also removed 
 
 The clean features are then converted into space separated strings so they can be processed by TF-IDF.
 
+
 ## TF-IDF
 
 TF-IDF is used to convert the cleaned tags, genres and categories into vectors that can be compared between games. It gives greater importance to features that are less common across the dataset, whereas features that appear more commonly across many games have less influence. A separate vectorizer is used for tags, genres and categories so each type of feature can independently contribute to the recommendation process.
+
 
 ## Cosine similarity
 
@@ -81,17 +92,17 @@ The recommendation information is then formatted and returned to the frontend, i
 
 ## Technologies
 
-Python
-Flask
-Pandas
-NumPy
-scikit-learn
-React
-JavaScript
-CSS
+- Python
+- Flask
+- Pandas
+- NumPy
+- scikit-learn
+- React
+- JavaScript
+- CSS
 
 
-# Dataset
+## Dataset
 
 The recommender uses a Steam games dataset from Kaggle https://www.kaggle.com/datasets/hubertsidorowicz/steam-games-dataset-daily-updates which contains information on 136000+ steam games.
 
@@ -100,13 +111,13 @@ The dataset files are not included in the repository because of their large file
 
 ## Setup
 
-Clone the repository and navigate to project folder
-Install Python packages: pip install pandas numpy scikit-learn flask flask-cors
-Place the Steam dataset CSV files in the data folder
-Start the flask backend: Python game-recommender.py
-In a separate terminal, navigate to frontend folder and do: npm install
-To start the React server do: npm run dev
-Open the address provided by Vite in your browser
+1. Clone the repository and navigate to project folder
+2. Install Python packages: pip install pandas numpy scikit-learn flask flask-cors
+3. Place the Steam dataset CSV files in the data folder
+4. Start the flask backend: python game-recommender.py
+5. In a separate terminal, navigate to frontend folder and do: npm install
+6. To start the React server do: npm run dev
+7. Open the address provided by Vite in your browser
 
 
 ## Usage
