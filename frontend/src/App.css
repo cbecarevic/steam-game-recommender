@@ -1,0 +1,142 @@
+/* header */
+
+header {
+  background: #192331;
+  padding: 25px 50px;
+}
+
+header h1 {
+  margin: 0 0 5px;
+  font-size: 25px;
+  color: #f1f1f1;
+}
+
+
+/* main */
+
+main {
+  max-width: 1920px;
+  padding: 35px 30px;
+}
+
+
+/* search section */
+
+.search-section {
+  background: #192331;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.search-section h2 {
+  color: #f1f1f1;
+  margin-bottom: 20px;
+}
+
+
+/* search input */
+
+.search-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+input {
+  width: 75%;
+  padding: 10px 12px;
+  background: #3e4453;
+  box-sizing: border-box;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 15px;
+  outline: none;
+}
+
+
+/* search results */
+
+.search-results {
+  width: 75%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: #48505f;
+  overflow: hidden;
+}
+
+.search-result {
+  padding: 10px 12px;
+  cursor: pointer;
+  color: #e5e7e9;
+}
+
+.search-result:hover {
+  background: #535e6e;
+  color: #ffffff;
+}
+
+
+/* selected games */
+
+.selected-game {
+  display: inline-flex;
+  align-items: center;
+  background: #1a9fff;
+  border-radius: 6px;
+  padding: 8px 10px 8px 12px;
+  margin: 5px;
+  color: #e5e7e9;
+}
+
+.remove-game {
+  margin-left: 10px;
+  padding: 0;
+  background: #e5e7e9;
+  font-size: 18px;
+}
+
+.remove-game:hover {
+  color: #ff0000;
+}
+
+
+/* recommendations */
+
+.recommendations h2 {
+  margin-bottom: 15px;
+  color: #f1f1f1;
+}
+
+.recommendation-card {
+  background: #294155;
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+}
+
+.recommendation-card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #f1f1f1;
+}
+
+.recommendation-card h4 {
+  margin-bottom: 7px;
+  color: #f1f1f1;
+}
+
+.recommendation-card p {
+  margin-bottom: 10px;
+  color: #bfc0c2;
+}
+
+.recommendation-card strong {
+  color: #f1f1f1;
+}
+
+.similar-to {
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+
